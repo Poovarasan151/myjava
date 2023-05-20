@@ -1,7 +1,31 @@
-class First
+class Honda
 {
+// fields - global variable
+// static , non static
+
+static int dealer_id =1234;         // static common for all objec
+static String owner_name = "kumar";
+int price;  // declare   --> non static
+int cc;
+float discount;  // data members        // variable
+
 public static void main(String[] args)
 {
-System.out.println("vanakkam");
+Honda shine   = new Honda();  // new allocates memory
+Honda activa  = new Honda();
+Honda unicorn = new Honda();   // object
+shine.price = 65000;
+activa.price = 80000;
+unicorn.price = 125000;
+shine.discount =5.0f;
+activa.discount=1.0f;
+System.out.println(shine.price);
+System.out.println(Honda.owner_name);
+System.out.println(unicorn.owner_name);
+System.out.println(owner_name);
 }
+
+
+
+
 }
