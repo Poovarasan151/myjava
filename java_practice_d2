@@ -1,0 +1,52 @@
+class Honda
+{
+// fields - global variable
+// static , non static
+
+static int dealer_id =1234;         // static common for all objec
+static String owner_name = "kumar";
+int price;  // declare   --> non static
+int cc;
+float discount;  // data members        // variable
+
+
+
+public static void main(String[] args)
+{
+Honda shine   = new Honda();  // new allocates memory
+Honda activa  = new Honda();
+Honda unicorn = new Honda();   // object
+shine.price = 65000;
+activa.price = 80000;
+unicorn.price = 125000;
+shine.discount =5.0f;
+activa.discount=1.0f;
+activa.buy(125000);  // method calling statement
+shine.buy(150000);
+unicorn.buy(160000);
+offer();
+Honda.offer();
+shine.offer();
+System.out.println(shine.price);
+System.out.println(Honda.owner_name);
+System.out.println(unicorn.owner_name);
+System.out.println(owner_name);
+}
+
+
+
+
+void buy(int amount) 
+// method local variable --amount
+{
+int disc = 1000; // scope of variable
+System.out.println("buying Honda bike for rs" + amount);
+//System.out.println(amount);
+}
+static void offer()
+{
+System.out.println("10% discount");
+}
+
+
+}

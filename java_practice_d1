@@ -3,7 +3,7 @@ class Honda
 // fields - global variable
 // static , non static
 
-static int dealer_id =1234;         // static common for all objec
+static int dealer_id =1234;         // static common for all object
 static String owner_name = "kumar";
 int price;  // declare   --> non static
 int cc;
