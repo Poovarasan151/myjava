@@ -1,0 +1,24 @@
+class Shopping
+{
+
+public static void main(String[] args)
+{
+int amount = 1000;
+Shopping myself = new Shopping();
+myself.purchase(amount);   // amount  ---> variable  // pass by value , inside the amount 1000
+System.out.println("from main method:" + amount);
+
+
+
+}
+void purchase(int cash) 
+{
+System.out.println("came to shoppig with me:" + cash);
+cash=500;
+System.out.println("came to shopping with:" + cash);
+}
+
+
+
+
+}
