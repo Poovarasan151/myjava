@@ -1,0 +1,21 @@
+package org.learning;
+
+public class Ipl2
+{
+	public static void main(String[] args)
+	{
+		
+		int score = 220;
+		boolean rcb_trophy = false;
+		if(rcb_trophy==true)
+			// if(rcb_trophy) we give this type, boolean only
+		{
+			System.out.println("get married soon");
+		}
+		else
+		{
+			System.out.println("better luck next time");
+		}
+		
+	}
+}

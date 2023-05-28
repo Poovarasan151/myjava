@@ -1,0 +1,13 @@
+package org.learning;
+
+public class Ipl3 {
+	public static void main(String[] args) {
+		int month=5;
+		while(month==5)
+		{
+			System.out.println("play");
+		}
+		
+	}
+
+}
