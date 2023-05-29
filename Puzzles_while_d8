@@ -1,0 +1,54 @@
+package org.learning;
+
+public class Puzzles {
+
+	public static void main(String[] args) {
+		
+     Puzzles puzzleobj = new Puzzles();
+     //puzzleobj.dplan();
+     //puzzleobj.fplan();
+     puzzleobj.minister();
+	}
+
+	private void minister() {
+		int day=1;
+		int amount=1;
+		int total=0;
+		while(day<=10)
+		{
+			System.out.println("in day "+ day +":"+amount);
+			total = total+amount;
+			amount=amount*2;
+			day = day+1;	
+		}
+		System.out.println("total:"+total);
+	}
+
+	private void fplan() {
+		int day=1;
+		int savings=0;
+		while(day<=10)
+		{
+			savings=savings+day;
+			System.out.println("savings:"+savings);
+			day=day+1;
+		}
+		System.out.println("fplan:"+savings);
+		
+	}
+
+	private void dplan() {
+		int day =1;
+		int packet_money =5;
+		int savings =0;
+		while(day<=10)
+		{
+			savings = savings + packet_money;
+			System.out.println("daily:"+day);
+			day = day+1;
+			
+		}
+		System.out.println("savings is:"+savings);
+	}
+
+}
