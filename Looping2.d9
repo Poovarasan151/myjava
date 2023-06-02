@@ -1,0 +1,29 @@
+package org.learning;
+
+public class Looping2 {
+
+	public static void main(String[] args) {
+		
+       Looping2 loopingobj=new Looping2();
+       loopingobj.count_devisors(100);
+	
+       
+	}
+
+	private void count_devisors(int no) {
+		
+		int div=2;
+		int count=0;
+		while(div<no)
+		{
+			if(no%div==0)
+			{
+				System.out.println(div);
+				count=count+1;
+			}
+			div=div+1;
+		}
+		System.out.println("count is:"+count);
+	}
+
+}
