@@ -1,0 +1,84 @@
+package org.learning;
+
+public class Looping3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Looping3 looping=new Looping3();
+     //looping.print_reverse(1234);
+     //looping.count_of_digits(751239);
+     //looping.sum_of_digits(1234);
+     //looping.print_straight_order(1234);
+     //looping.print_double_number(123456);
+     looping.print_triple_number(123456);
+	}
+
+	private void print_triple_number(int no) {
+		// TODO Auto-generated method stub
+		int div=1000;
+		while(div>0)
+		{
+			System.out.println(no/div);
+			no=no%div;
+			div=div/1000;
+		}
+	}
+
+	private void print_double_number(int no) {
+		// TODO Auto-generated method stub
+		int div=10000;
+		while(div>0)
+		{
+			System.out.println(no/div);
+			no=no%div;
+			div=div/100;
+		
+		}
+	}
+
+	private void print_straight_order(int no) {
+		// TODO Auto-generated method stub
+		int div=1000;
+		while(div>=1)
+		{
+			System.out.println(no/div+" ");
+			no=no%div;
+			div=div/10;
+			
+		}
+	}
+
+	private void sum_of_digits(int no) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		while(no>0)
+		{
+			int rem=no%10; //
+			sum=sum+rem;
+			no=no/10;
+			
+		}
+		System.out.println(sum);
+	}
+
+	private void count_of_digits(int no) {
+		// TODO Auto-generated method stub
+		int count=0;
+		while(no>0)
+		{
+			no=no/10;
+			count=count+1;
+		}
+		System.out.println(count);
+	}
+
+	private void print_reverse(int cake) {
+		// TODO Auto-generated method stub
+		while(cake>0)
+		{
+			System.out.println(cake%10);
+			cake=cake/10;
+		}
+	}
+
+}
