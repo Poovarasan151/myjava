@@ -1,0 +1,28 @@
+package org.learning;
+
+public class Neon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int no =9;
+		int store =0;
+		int rem=no*no;
+		System.out.println(rem);
+		while(rem>0)
+		{
+			int no2=rem%10;
+			store=no2+store;
+			rem=rem/10;
+		}
+		System.out.println(store);
+		if(no==store)
+		{
+			System.out.println(no+"is a neon number");
+		}
+		else
+		{
+			System.out.println(no+"is not a neon number");
+		}
+	}
+
+}
