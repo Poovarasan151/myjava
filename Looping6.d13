@@ -1,0 +1,69 @@
+package org.learning;
+
+public class Looping6 {
+
+	public static void main(String[] args) {
+		
+		Looping6 ll =new Looping6();
+		ll.find_lcm(3,9);             //least lcm
+		//ll.swap_amount(10,20);
+		//ll.swap_without_third(123,234);
+		//ll.print_fibbo();
+	}
+
+	private void print_fibbo() {
+		
+		int a=0, b=1;
+		while(a<=13)
+		{
+			int c=a+b;
+			System.out.println(a+" ");
+			a=b;
+			b=c;
+		}
+		
+	}
+
+	private void swap_without_third(int no1, int no2) {
+		System.out.println("no1 "+no1);
+		System.out.println("no2 "+no2);
+		no1=no1+no2;
+		System.out.println("no1 "+no1);
+		no2=no1-no2;
+		System.out.println("no2 "+no2);
+		no1=no1-no2;
+		System.out.println("no1 "+no1);
+		
+		
+	}
+
+	private void swap_amount(int old_coin, int new_coin) {
+		
+		System.out.println("old"+old_coin);
+		System.out.println("new"+new_coin);   
+		int box=old_coin;                      //swapping
+		old_coin=new_coin;
+		new_coin=box;
+		System.out.println("old"+old_coin);
+		System.out.println("new"+new_coin);
+			
+	}
+
+	private void find_lcm(int no1, int no2) {
+		
+		int big=no1>no2? no1:no2; //ternary operator for check big number
+		int temp = big;
+		System.out.println(big);
+while(true)
+{
+		if(big%no1==0  && big%no2==0)
+		{
+			System.out.println("LCM is "+big);
+			break;
+		}
+		big=big+temp;
+		
+	}
+
+}
+}
