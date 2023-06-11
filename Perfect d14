@@ -1,0 +1,37 @@
+package org.learning;
+
+public class Perfect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int no=6;
+		Perfect per=new Perfect();
+		per.find_perfecr_number(no);
+	}
+
+	private void find_perfecr_number(int no) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		int div=1;
+		while(div<=no/2)
+		{
+			int rem=no%div;  // remainder
+			if(rem==0)
+			{
+				System.out.println(div);
+				sum=sum+div;
+			}
+			div=div+1;
+		}
+		System.out.println("sum of "+sum);
+		if(no==sum)
+		{
+			System.out.println("it is a perfect number");
+		}
+		else
+		{
+			System.out.println("it is not a perfect number");
+		}
+	}
+
+}
